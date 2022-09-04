@@ -396,6 +396,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 }
 .CartItem__ImageWrapper {
   width: 40%;
+  padding-right: 5px;
 }
 .AddonItem__Row__Outerslider_addon {
   margin: 0 5px 10px;

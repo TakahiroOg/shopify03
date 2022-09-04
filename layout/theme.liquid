@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+
+  <meta name="google-site-verification" content="uWaT2nDMlA6se1pUWsXbhsFZ0SMlA1ZowmOyNMY26Mk" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -218,6 +220,8 @@
     </script>
   
 	{{ shop.metafields.loox["global_html_head"] }}
+
+{% render 'gsf-conversion-pixels' %}
 </head>
 
   <body class="gradient">
@@ -276,5 +280,6 @@
     {%- endif -%}
   
 	{{ shop.metafields.loox["global_html_body"] }}
+{% include 'cjpod' %}
 </body>
 </html>

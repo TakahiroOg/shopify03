@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "6.0.2",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/support.shopify.com\/"
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://support.shopify.com/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -29,20 +29,22 @@
         "info": "t:settings_schema.colors.settings.colors_accent_1.info"
       },
       {
-        "id": "gradient_accent_1",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_1.label"
-      },
-      {
         "type": "color",
         "id": "colors_accent_2",
         "default": "#334FB4",
         "label": "t:settings_schema.colors.settings.colors_accent_2.label"
       },
       {
-        "id": "gradient_accent_2",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+        "type": "color",
+        "id": "colors_accent_3",
+        "default": "#334FB4",
+        "label": "color accent 3"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_4",
+        "default": "#334FB4",
+        "label": "color accent 4"
       },
       {
         "type": "header",
@@ -69,20 +71,10 @@
         "label": "t:settings_schema.colors.settings.colors_background_1.label"
       },
       {
-        "id": "gradient_background_1",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_background_1.label"
-      },
-      {
         "type": "color",
         "id": "colors_background_2",
         "default": "#F3F3F3",
         "label": "t:settings_schema.colors.settings.colors_background_2.label"
-      },
-      {
-        "id": "gradient_background_2",
-        "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_background_2.label"
       }
     ]
   },
@@ -1194,9 +1186,25 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       },
       {
+        "type": "checkbox",
+        "id": "show_cart_offer",
+        "label": "Show cart offer",
+        "default": false
+      },
+      {
         "type": "product",
         "id": "cart_drawer_product",
         "label": "Product"
+      }
+    ]
+  },
+  {
+    "name": "Payment Logo",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "payment_logo",
+        "label": "payment logo"
       }
     ]
   }

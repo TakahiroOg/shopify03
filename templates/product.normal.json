@@ -2,7 +2,10 @@
   "sections": {
     "main": {
       "type": "main-product-3",
-      "settings": {}
+      "settings": {
+        "hide_variants": true,
+        "enable_video_looping": true
+      }
     },
     "cta": {
       "type": "cta",

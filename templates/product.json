@@ -3,6 +3,8 @@
     "main": {
       "type": "main-product-2",
       "settings": {
+        "hide_variants": true,
+        "enable_video_looping": false
       }
     },
     "165747575581a00aed": {

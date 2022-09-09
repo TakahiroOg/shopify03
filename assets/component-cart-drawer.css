@@ -388,7 +388,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 
 .AddonItem__Row .CartItem {
   padding: 6px;
-  box-shadow: #00000029 0 0 0.375rem;
+  border: 0.1rem solid rgba(var(--color-foreground),.2);
   align-items: flex-start;
   border-radius: 4px;
   display: flex;

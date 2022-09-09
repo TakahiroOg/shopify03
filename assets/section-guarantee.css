@@ -38,8 +38,9 @@
 }
 @media screen and (max-width: 749px) {
   .gt-content {
-    flex: 0 0 60%;
-    padding: 0 20px;
+      flex: 0 0 60%;
+      padding: 5px 20px 0;
+      background: #fff;
   }
   .gt-header {
     text-align: center;

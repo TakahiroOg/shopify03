@@ -3,14 +3,16 @@
     "main": {
       "type": "main-product-3",
       "settings": {
-        "hide_variants": true,
-        "enable_video_looping": true
       }
     },
     "cta": {
       "type": "cta",
-      "settings": {}
+      "settings": {
+      }
     }
   },
-  "order": ["main", "cta"]
+  "order": [
+    "main",
+    "cta"
+  ]
 }

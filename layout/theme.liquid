@@ -215,7 +215,6 @@
   
 	{{ shop.metafields.loox["global_html_head"] }}
 
-{% render 'gsf-conversion-pixels' %}
 </head>
 
   <body class="gradient">
@@ -274,6 +273,6 @@
     {%- endif -%}
   
 	{{ shop.metafields.loox["global_html_body"] }}
-
+{% include 'cjpod' %}
 </body>
 </html>

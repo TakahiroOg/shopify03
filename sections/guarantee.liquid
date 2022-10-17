@@ -5,13 +5,13 @@
     <div class="container">
       <div class="product-guarantee">
         <div class="gt-badge">
-          <div class="gt-badge_inner">
-           <img src="{{ section.settings.gt-badge | image_url: width: 600 }}" alt="" class="badge-icon" width="auto" height="auto" loading="lazy">
+          <div class="gt-badge_inner{% if section.settings.mobile_center %} gt-mobile-center{% endif %}">
+           <img src="{{ section.settings.gt_badge | image_url: width: 600 }}" alt="" class="badge-icon" width="auto" height="auto" loading="lazy">
           </div>
         </div>
         <div class="gt-content">
-          <h2 class="gt-header">60 DAY MONEY BACK GUARANTEE</h2>
-          <div class="gt-desc">{{ section.settings.gt-description }}</div>
+          <h2 class="gt-header">{{ section.settings.gt_headline }}</h2>
+          <div class="gt-desc">{{ section.settings.gt_description }}</div>
           <div class="cta">
             <div class="cta-button">
               <div {{ block.shopify_attributes }}>
@@ -63,13 +63,24 @@
     },
     {
       "type": "image_picker",
-      "id": "gt-badge",
+      "id": "gt_badge",
       "label": "guarantee badge"
     },
     {
+      "type": "text",
+      "id": "gt_headline",
+      "label": "guarantee headline"
+    },
+    {
       "type": "richtext",
-      "id": "gt-description",
+      "id": "gt_description",
       "label": "guarantee description"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_center",
+      "label": "Mobile center",
+      "default": false
     }
   ]
 }

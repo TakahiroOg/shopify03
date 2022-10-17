@@ -61,7 +61,7 @@ slider-component.slider-component-full-width {
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
-  .slider--mobile:after {
+  .slider--mobile:not(.thumbnail-list):after {
     content: "";
     width: 0;
     padding-left: 1.5rem;

@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-2",
+      "blocks": {
+        "fa2626d3-64bb-4c05-977e-0aa91c303a3b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How To Use",
+            "tab_content": "<p>1. Once you've washed your face and neck - grab an oil or cream and apply it to the skin<\/p><p>2. Press the power button to turn it on and select preferred mode.<\/p><p>3. Use the device on your problem areas by gently stroking in an upward motion for 5-10 times<\/p><p>4. Once you've completed massaging your face and neck, you can clean off the head of the device and that's it!<\/p>"
+          }
+        },
+        "f879fb62-8f98-438d-9493-8f5bebae6a87": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's Included",
+            "tab_content": "<p>1 x LED Micro-Current Face Massager<\/p><p>1 x USB charging cable<\/p><p>1 x User manual<\/p><p>1 x Storage box<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fa2626d3-64bb-4c05-977e-0aa91c303a3b",
+        "f879fb62-8f98-438d-9493-8f5bebae6a87"
+      ],
+      "settings": {
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "review_img": "shopify:\/\/shop_images\/8.jpg",
+        "review_text": "It has made my skin so nice and sharpened my jawline. Absolutely love it.",
+        "review_name": "Emily W."
+      }
+    },
+    "0d1af0e1-f396-4f94-999d-3b5fd16c6c8b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bring the Spa Home. Try This Do-It-Yourself Microcurrent Skincare"
+          }
+        },
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This face sculpting device combines 3 powerful skincare technologies for the ultimate at-home spa facial.<\/p><p>Reduce the appearance of <strong>wrinkles, fine lines, dark circles, blemishes, and dark spots. De-puff and energize the skin<\/strong> in as little as 5 minutes per day, three times per week. It’s portable and rechargeable for easy travel, so you can take it with you anywhere. <\/p>",
+            "html_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0",
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/16.jpg",
+        "height": "adapt",
+        "layout": "text_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": true,
+        "buy_button_text": "BUY IT NOW",
+        "buy_button_desktop": false,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "cfb38d3b-1e73-465f-8d41-345c484faac7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__cfb38d3b-1e73-465f-8d41-345c484faac7-16657605649dba9b80-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tones & Sculpts Your Face… While You Relax!"
+          }
+        },
+        "template--16610979676375__cfb38d3b-1e73-465f-8d41-345c484faac7-16657605649dba9b80-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It uses <strong>low-level micro currents<\/strong> with <strong>LED light therapy & heat massage<\/strong> to give your skin the boost it needs. The current used is similar to the one naturally produced by the body to energize facial muscles, which in turn <strong>gives the face a lifted appearance<\/strong>.<br\/><br\/>It also helps boost the production of elastin and collagen, the two things responsible for <strong>plumping out and firming the skin<\/strong>.<\/p>",
+            "html_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__cfb38d3b-1e73-465f-8d41-345c484faac7-16657605649dba9b80-0",
+        "template--16610979676375__cfb38d3b-1e73-465f-8d41-345c484faac7-16657605649dba9b80-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "layout": "image_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/94f0f89dc88d4840bb1027282e179017.mp4",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": false,
+        "buy_button_text": "",
+        "buy_button_desktop": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1f7a7f5d-541f-440b-93cb-9f3a073f6fb2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "It’s the Effortless Way to Re-Train Facial Muscles to Support Your Skin"
+          }
+        },
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "html_text": "<div class=\"benefit-list\">\n<p>92% of users experienced improved facial contouring!<\/p>\n<p>90% of users reported their skin looked and felt smoother which drove up their confidence!<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-0",
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12.jpg",
+        "height": "adapt",
+        "layout": "text_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": true,
+        "buy_button_text": "BUY IT NOW",
+        "buy_button_desktop": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e85d70cd-4619-44db-af59-f770a8d80d71": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gentle, Painless, And Easy to Use!"
+          }
+        },
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It provides a soothing massage with medium vibration and 45°C heat. Apply your favorite lotion or essence, and you can start enjoying the comfortable and relaxing experience that the<strong> <\/strong>massager<strong> <\/strong>brings you.<\/p>",
+            "html_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-0",
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.gif",
+        "height": "adapt",
+        "layout": "image_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": true,
+        "buy_button_text": "BUY IT NOW",
+        "buy_button_desktop": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "cta": {
+      "type": "cta",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "81c0d837-551b-4a1a-a8ab-a575fee04ff3": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "81c0d837-551b-4a1a-a8ab-a575fee04ff3"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "guarantee": {
+      "type": "guarantee",
+      "settings": {
+        "gt_image": "shopify:\/\/shop_images\/gt_bg.jpg",
+        "gt_badge": "shopify:\/\/shop_images\/gt.png",
+        "gt_headline": "GLOW YOUR SKIN GUARANTEE",
+        "gt_description": "<p>Glow your skin or get your money back! We're confident you'll love your Microcurrent massager. If you don't see results, you can easily get your money back.<\/p><p>Everyone is different, but we are so confident that we offer a 60-day risk-free trial.<\/p>",
+        "mobile_center": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0d1af0e1-f396-4f94-999d-3b5fd16c6c8b",
+    "cfb38d3b-1e73-465f-8d41-345c484faac7",
+    "1f7a7f5d-541f-440b-93cb-9f3a073f6fb2",
+    "e85d70cd-4619-44db-af59-f770a8d80d71",
+    "cta",
+    "loox-product-reviews-app-section",
+    "guarantee"
+  ]
+}

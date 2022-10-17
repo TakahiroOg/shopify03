@@ -8,8 +8,6 @@
 }
 .gt-badge_inner {
   max-width: 160px;
-  margin: auto;
-  text-align: center;
 }
 .gt-desc {
   line-height: 1.25;
@@ -35,12 +33,15 @@
   .gt-background {
     height: 100%;
   }
+  .gt-badge_inner {
+    margin: auto;
+  }
 }
 @media screen and (max-width: 749px) {
   .gt-content {
-      flex: 0 0 60%;
-      padding: 5px 20px 0;
-      background: #fff;
+    flex: 0 0 60%;
+    padding: 5px 20px 0;
+    background: #fff;
   }
   .gt-header {
     text-align: center;
@@ -48,9 +49,12 @@
   .product-guarantee {
     padding-bottom: 0;
   }
+  .gt-mobile-center {
+    margin: auto;
+  }
 }
 @media screen and (max-width: 989px) {
-    .gt-background {
+  .gt-background {
     opacity: 40%;
   }
 }

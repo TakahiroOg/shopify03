@@ -277,7 +277,7 @@
   height: 100%;
   width: 100%;
   padding: 0;
-  color: rgb(var(--color-base-accent-3));
+  color: rgb(var(--color-base-accent-2));
   cursor: pointer;
   background-color: transparent;
 }
@@ -346,12 +346,23 @@
 
 .product-subtitle {
   line-height: 1.4;
+  margin-bottom: 1rem;
 }
-.product-headline {
-  font-size: 3.6rem;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+
+.benefit-list > * {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 6px;
+}
+.benefit-list > *::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0650/9818/6967/files/check.svg?v=1665659941");
+  background-size: cover;
 }
 .product-info .price {
   display: flex;
@@ -365,7 +376,7 @@
 }
 .price-item--sale {
   font-weight: 700;
-  color: var(--color-base-accent-1);
+  color: rgb(var(--color-base-accent-1));
 }
 .price-item--regular {
   font-size: 2rem;
@@ -483,6 +494,19 @@ input[type="radio"]:checked + label {
 .b-get-btn button {
   width: 100%;
 }
+.b-get-btn {
+  position: relative;
+}
+.b-get-btn::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0650/9818/6967/files/arrow-right.svg?v=1665753331);
+  background-size: cover;
+}
 .lock-icon {
   display: inline-block;
   vertical-align: middle;
@@ -496,17 +520,13 @@ input[type="radio"]:checked + label {
   max-width: 254px;
   margin: auto;
 }
-.product-subtitle span {
-  font-weight: 700;
-  /* color: rgb(var(--color-base-accent-2)); */
-}
 .review-img {
   flex: 0 0 30%;
   line-height: 0;
   position: relative;
 }
 .review-img img {
-  border-radius: 5px;
+  border-radius: 100%;
 }
 .review-content {
   font-size: 12px;
@@ -536,14 +556,15 @@ input[type="radio"]:checked + label {
   align-items: center;
 }
 @media screen and (max-width: 749px) {
-  .product-headline {
-    font-size: 2.8rem;
-  }
   .product-gallery {
     flex: 100%;
   }
   .mobile-hide {
     display: none;
+  }
+  .product-info .benefit-list {
+    margin: 1rem 0;
+    font-size: 14px;
   }
   .price-item--sale {
     font-size: 2.8rem;
@@ -602,17 +623,12 @@ input[type="radio"]:checked + label {
   }
 }
 @media screen and (min-width: 750px) {
-  .only-on-mobile {
-    display: none;
-  }
-  .product-headline {
-    font-size: 2.8rem;
+  .benefit-list {
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .product-headline {
-    font-size: 36px;
-  }
   .cta {
     display: flex;
     align-items: center;

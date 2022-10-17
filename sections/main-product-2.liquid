@@ -1,5 +1,6 @@
 <section id="MainProduct-2-{{ section.id }}" data-section="{{ section.id }}">
   {{ "section-main-product-2.css" | asset_url | stylesheet_tag }}
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -9,6 +10,7 @@
     <div class="product product--thumbnail_slider grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="only-on-mobile">
       <h1 class="product-headline">{{ product.metafields.custom.headline }}</h1>
+      <div class="product-subtitle">{{ product.metafields.custom.product_subtitle }}</div>
     </div>
     <div class="grid__item product__media-wrapper">
         <media-gallery id="MediaGallery-{{ section.id }}" role="region" class="product__media-gallery" aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="thumbnail_slider">
@@ -25,7 +27,6 @@
                   assign media_count = media_count | minus: variant_images.size | plus: 1
                 endif
                 assign media_width = 0.5
-
               -%}
               {%- if product.selected_or_first_available_variant.featured_media != null -%}
                 {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -37,7 +38,6 @@
               {%- for media in product.media -%}
                 {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
                   <li id="Slide-{{ section.id }}-{{ media.id }}" class="product__media-item grid__item slider__slide{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                    
                     {%- liquid
                       assign media_position = media_position | default: 0 | plus: 1
                       assign lazy_load = false
@@ -154,59 +154,51 @@
 
           <div class="product-info">
             <div class="mobile-hide">
-            <h1 class="product-headline">{{ product.metafields.custom.headline }}</h1>
+              <h1 class="product-headline">{{ product.metafields.custom.headline }}</h1>
+              <div class="product-subtitle">{{ product.metafields.custom.product_subtitle }}</div>
             </div>
-            <div class="product-subtitle">{{ product.metafields.custom.product_subtitle }}</div>
     
+            <div class="benefit-list">
+              {% for item in product.metafields.custom.benefit_list.value %}
+                <div>{{ item }}</div>
+              {% endfor %}
+            </div>
+
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
-            <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-              {%- for option in product.options_with_values -%}
-                {% if option.name contains 'Bundle' %}
-                  <fieldset class="js product-form__input saving-bundles">
-                    <legend class="bundle-label">Bundle & Save</legend>
-                    <div class="row">
-                      {%- for value in option.values -%}
-                      <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            name="{{ option.name }}"
-                            value="{{ value | escape }}"
-                            form="{{ product_form_id }}"
-                            {% if option.selected_value == value %}checked{% endif %}
-                      > 
-                        {% if value contains 1 %}
-                      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle1">
-                          <div>SAVE<span>40%</span></div>
-                          <div>1 SET</div>
-                          <div>Single</div>
-                          <div>{{ product.variants[0].price | money }}</div>
-                          </label>
-                        {% elsif value contains 2 %}
-                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle2">
-                          <div>SAVE<span>50%</span></div>
-                          <div>2 SETS</div>
-                          <div>Couple Bundle</div>
-                          <div>{{ product.variants[1].price | money }}</div>
-                          <div>BEST SELLER</div>
-                        </label>
-                        {% elsif value contains 3 %}
-                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"class="saving-bundle saving-bundle3">
-                          <div>SAVE<span>60%</span></div>
-                          <div>3 SETS</div>
-                          <div>Family Bundle</div>
-                          <div>{{ product.variants[2].price | money }}</div>
-                          <div>BEST DEAL </div>
-                        </label>
+            {%- unless product.has_only_default_variant -%}
+              <variant-radios
+                class="no-js-hidden"
+                data-section="{{ section.id }}"
+                data-url="{{ product.url }}"
+                {{ block.shopify_attributes }}
+              >
+                {%- for option in product.options_with_values -%}
+                  <fieldset class="js product-form__input">
+                    <legend class="form__label">{{ option.name }}</legend>
+                    {%- for value in option.values -%}
+                      <input
+                        type="radio"
+                        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        name="{{ option.name }}"
+                        value="{{ value | escape }}"
+                        form="{{ product_form_id }}"
+                        {% if option.selected_value == value %}
+                          checked
                         {% endif %}
-                      {%- endfor -%}
-                    </div>
+                      >
+                      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                        {{ value }}
+                      </label>
+                    {%- endfor -%}
                   </fieldset>
-                {% endif %}
-              {% endfor %}
-              <script type="application/json">
-                {{ product.variants | json }}
-              </script>
-            </variant-radios>
+                {%- endfor -%}
+                <script type="application/json">
+                  {{ product.variants | json }}
+                </script>
+              </variant-radios>
+            {%- endunless -%}
     
               <div class="cta">
                 <div class="cta-button">
@@ -217,24 +209,23 @@
                       <div class="b-get-btn">
                         <button type="submit" name="add" class="button get-btn"
                           {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
-                    <span>ADD TO CART</span>
-                    <div class="loading-overlay__spinner hidden">
-                      <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                      </svg>
-                    </div>
-                  </button>
+                          <span>ADD TO CART</span>
+                          <div class="loading-overlay__spinner hidden">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                      {%- endform -%}
+                    </product-form>
+                  </div>
+                  <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
                 </div>
-                {%- endform -%}
-              </product-form>
-              </div>
-              <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              </div>
                 <div class="b-safe-checkout">
-                  <div class="flex-row-center secure-text" style="padding-left:10px;">
-                      <img class ="lock-icon" src="https://cdn.shopify.com/s/files/1/0555/1774/1228/files/bxs_lock.png?v=1656162380" width="20" height="16" loading="lazy">
-                    <span class="safe-checkout">GUARANTEED SAFE CHECKOUT</span>
+                  <div class="flex-row-center secure-text" style="text-align:center">
+                    <span class="safe-checkout">60-Day Money Back Guarantee</span>
                   </div>
                   <div class="payment-logo-wrapper">
                     <img class="payment-logos" src="{{ settings.payment_logo | image_url: width: 480 }}" width="auto" height="auto" loading="lazy">
@@ -244,17 +235,38 @@
     
               <div class="review-card row">
                 <div class="review-img">
-                  <img src="{{ '3.jpeg' | asset_url }}" alt="" loading="lazy" width="auto" height="auto">
+                  <img src="{{ section.settings.review_img | image_url: width: 480 }}" alt="" loading="lazy" width="auto" height="auto">
                 </div>
                 <div class="review-content">
-                  <span class="review">{{ product.metafields.custom.review }}</span>
-                  <strong class="name">Walter C.</strong>
+                  <span class="review">{{ section.settings.review_text }}</span>
+                  <strong class="name">{{ section.settings.review_name }}</strong>
                   <div class="verify">
                     <img src="{{ 'check.png' | asset_url }}" loading="lazy" width="12" height="12" alt="">
                     <span>Verified Buyer</span>
                   </div>
                 </div>
               </div>
+
+              {%- for block in section.blocks -%}
+              {%- case block.type -%}
+              {%- when 'collapsible_tab' -%}
+                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary>
+                      <div class="summary__title">
+                        <h2 class="h4 accordion__title">
+                          {{ block.settings.heading | default: block.settings.page.title }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                      {{ block.settings.tab_content }}
+                    </div>
+                  </details>
+                </div>
+              {%- endcase -%}
+              {%- endfor -%}
             </div>
         </div>
       </div>
@@ -347,6 +359,25 @@
   "name": "t:sections.main-product.name",
   "tag": "section",
   "class": "section",
+  "blocks": [
+    {
+      "type": "collapsible_tab",
+      "name": "t:sections.main-product.blocks.collapsible_tab.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible row",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_content",
+          "label": "Tab content"
+        }
+      ]
+    }
+  ],
   "settings": [
     {
       "type": "checkbox",
@@ -359,6 +390,21 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "Video Looping"
+    },
+    {
+      "type": "image_picker",
+      "id": "review_img",
+      "label": "review image"
+    },
+    {
+      "type": "textarea",
+      "id": "review_text",
+      "label": "review text"
+    },
+    {
+      "type": "text",
+      "id": "review_name",
+      "label": "review name"
     }
   ]
 }

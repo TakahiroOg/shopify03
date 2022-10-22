@@ -29,9 +29,6 @@
   }
 {%- endstyle -%}
 
-{% if section.settings.banner_image_link %}
-  <a href="{{ section.settings.banner_image_link }}">
-{% endif %}
   <div id="Banner-{{ section.id }}" class="banner-wrapper banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
     {%- if section.settings.image != blank -%}
       <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
@@ -48,13 +45,13 @@
             assign sizes = "100vw"
           endif
         -%}
-        {{ section.settings.image | image_url: width: 1500 | image_tag:
+        {{ section.settings.image | image_url: width: 1440 | image_tag:
           loading: 'lazy',
           width: section.settings.image.width,
           height: image_height,
           class: image_class,
           sizes: sizes,
-          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          widths: '375, 550, 750, 1100, 1440',
           alt: section.settings.image.alt | escape
         }}
       </div>
@@ -89,7 +86,7 @@
         }}
       </div>
     {%- endif -%}
-    <div class="banner__content banner__content--{{ section.settings.desktop_content_position }}">
+    <a href="{{ section.settings.banner_image_link }}" class="banner__content banner__content--{{ section.settings.desktop_content_position }}">
       <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -114,11 +111,8 @@
           {%- endcase -%}
         {%- endfor -%}
       </div>
-    </div>
+    </a>
   </div>
-{% if section.settings.banner_image_link %}
-</a>
-{%- endif -%}
 {% schema %}
 {
   "name": "t:sections.image-banner.name",

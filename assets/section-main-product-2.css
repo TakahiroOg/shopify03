@@ -360,14 +360,13 @@
   height: 18px;
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 2px;
   background-image: url("https://cdn.shopify.com/s/files/1/0650/9818/6967/files/check.svg?v=1665659941");
   background-size: cover;
 }
 .product-info .price {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
   font-size: 30px;
 }
 .price > * {
@@ -386,7 +385,8 @@
   display: inline-block;
 }
 .price--on-sale .price__sale {
-  display: initial;
+  display: flex;
+  align-items: baseline;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -485,8 +485,7 @@ input[type="radio"]:checked + label {
   color: #fff;
 }
 .cta {
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin: 1.5rem 0;
 }
 .cta-button {
   flex: 0 0 50%;
@@ -563,7 +562,7 @@ input[type="radio"]:checked + label {
     display: none;
   }
   .product-info .benefit-list {
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem;
     font-size: 14px;
   }
   .price-item--sale {

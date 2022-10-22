@@ -4,6 +4,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-2.jpg",
+        "banner_image_link": "shopify:\/\/products\/led-micro-current-face-massager",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
@@ -46,7 +47,7 @@
         "1657510078e5c262af-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled_design_1.jpg",
+        "image": "shopify:\/\/shop_images\/18_785d5d6c-c439-4a1c-9780-fae3caff9a8a.jpg",
         "height": "adapt",
         "layout": "text_first",
         "big_header": true,

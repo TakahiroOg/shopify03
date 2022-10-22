@@ -3,12 +3,6 @@
   margin-top: 20px;
   position: relative;
 }
-.gt-badge {
-  padding: 15px;
-}
-.gt-badge_inner {
-  max-width: 160px;
-}
 .gt-desc {
   line-height: 1.25;
 }
@@ -52,9 +46,9 @@
   .gt-mobile-center {
     margin: auto;
   }
-}
-@media screen and (max-width: 989px) {
-  .gt-background {
-    opacity: 40%;
+  .badge-icon {
+    width: 200px;
+    left: 8%;
+    position: relative;
   }
 }

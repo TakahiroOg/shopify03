@@ -355,6 +355,7 @@
   padding-left: 30px;
   position: relative;
   margin-bottom: 6px;
+  color: #262626;
 }
 .benefit-list > *::before {
   content: "";
@@ -518,6 +519,7 @@
   }
   .thumbnail {
     border-radius: 12px;
+    color: rgb(var(--color-base-text));
   }
 }
 @media screen and (max-width: 1024px) {

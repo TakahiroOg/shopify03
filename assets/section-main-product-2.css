@@ -240,6 +240,10 @@
     padding: 0.5rem;
     flex: 1;
     scroll-padding-left: 0.5rem;
+    justify-content: center;
+  }
+  .product slider-component .thumbnail-list button[aria-current] {
+    background-color: #000;
   }
 }
 
@@ -263,21 +267,19 @@
   .product--thumbnail_slider .slider-mobile-gutter .slider-button {
     display: flex;
   }
+  .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+    width: calc(16.5% - 0.8rem);
+  }
 }
 
-.thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-  width: calc(16.5% - 0.8rem);
-}
 .thumbnail {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  border-radius: 3px;
   height: 100%;
   width: 100%;
   padding: 0;
-  color: rgb(var(--color-base-accent-2));
   cursor: pointer;
   background-color: transparent;
 }
@@ -411,79 +413,7 @@
   height: 1px;
   width: 1px;
 }
-.bundle-label {
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 8px;
-  line-height: 1.2;
-  color: #000;
-}
-.saving-bundles {
-  padding-bottom: 20px;
-}
-.saving-bundle {
-  border: 2px solid #d7d7d7;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-  padding: 17px 10px;
-  max-width: 174px;
-  cursor: pointer;
-  width: 100%;
-  background-color: #fff;
-}
-.saving-bundle div {
-  line-height: 1.2;
-}
-.saving-bundle div:nth-child(2) {
-  font-size: 20px;
-  font-weight: 700;
-}
-.saving-bundle div:first-child {
-  font-size: 10px;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #3e4e59;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  position: absolute;
-  top: -7px;
-  left: -8px;
-  padding: 10px 6px;
-  text-transform: uppercase;
-  font-style: italic;
-  line-height: 1;
-  transform: rotate(-21deg);
-}
-.saving-bundle div:first-child span {
-  font-size: 15px;
-  font-weight: 700;
-  display: block;
-}
-.saving-bundle div:nth-child(5) {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  background-color: #3e4e59;
-  border-radius: 4px;
-  padding: 6px;
-  position: absolute;
-  bottom: -14px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 110px;
-  color: #fff;
-}
-.saving-bundle2 {
-  margin: 0px 10px;
-}
-input[type="radio"]:checked + label {
-  border: 2px solid #009dc8;
-  background-color: #009dc8;
-  color: #fff;
-}
+
 .cta {
   margin: 1.5rem 0;
 }
@@ -568,49 +498,29 @@ input[type="radio"]:checked + label {
   .price-item--sale {
     font-size: 2.8rem;
   }
-  .saving-bundles {
-    padding-bottom: 6px;
-  }
-  .bundle-label {
-    font-size: 13px;
-    margin-bottom: 11px;
-  }
   .price-save-stock {
     margin: 19px 0px 10px;
   }
+  .product slider-component.thumbnail-slider .slider-button {
+    display: none;
+  }
+  .product slider-component .thumbnail-list button img,
+  .product slider-component .thumbnail-list li .thumbnail__badge {
+    display: none;
+  }
+  .product slider-component .thumbnail-list button {
+    border: 1px solid;
+    box-shadow: none;
+  }
+  .product slider-component .thumbnail-list li {
+    height: 12px;
+    width: 12px;
+  }
+  .thumbnail {
+    border-radius: 12px;
+  }
 }
 @media screen and (max-width: 1024px) {
-  .saving-bundle div:nth-child(2) {
-    font-size: 14px;
-  }
-  .saving-bundle div:nth-child(3) {
-    font-size: 12px;
-  }
-  .saving-bundle div:nth-child(4) {
-    font-size: 13px;
-  }
-  .saving-bundle div:first-child span {
-    font-size: 10px;
-  }
-  .saving-bundle div:first-child {
-    font-size: 7.5px;
-    top: -11px;
-    left: -8px;
-    padding: 7px;
-  }
-  .saving-bundle div:nth-child(5) {
-    font-size: 9px;
-    padding: 5px 6px;
-    bottom: -12px;
-    max-width: 76px;
-  }
-  .saving-bundle {
-    padding: 10px 0px 15px;
-    border-radius: 8px;
-  }
-  .saving-bundle2 {
-    margin: 0px 6px;
-  }
   .payment-logos {
     margin: auto;
   }
@@ -625,6 +535,10 @@ input[type="radio"]:checked + label {
   .benefit-list {
     margin-bottom: 2.5rem;
     margin-left: 1rem;
+  }
+  .thumbnail {
+    border-radius: 3px;
+    color: rgb(var(--color-base-accent-2));
   }
 }
 @media screen and (min-width: 1024px) {

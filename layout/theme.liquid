@@ -188,9 +188,16 @@
       }
 
       @font-face {
-        font-family: "NeufileGrotesk Medium";
-        src: url("{{ 'NeufileGrotesk-Medium.woff' | asset_url }}") format("woff");
-      }
+        font-family: NeufileGrotesk Medium;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        -webkit-font-smoothing: antialiased; 
+        -moz-osx-font-smoothing: antialiased;
+        src: url('{{ 'NeufileGrotesk-SemiBold.woff' | asset_url }}') format("woff"),
+             url('{{ 'NeufileGrotesk-SemiBold.woff2' | asset_url }}') format("woff2"),
+             url('{{ 'NeufileGrotesk-SemiBold.ttf' | asset_url }}') format("truetype");
+      };
 
       @media screen and (min-width: 750px) {
         body {

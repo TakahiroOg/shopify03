@@ -388,7 +388,7 @@ h5,
 }
 
 .product-headline {
-  font-family: "NeufileGrotesk Medium" !important;
+  font-family: NeufileGrotesk Medium, serif !important;
   font-size: 3.6rem;
   line-height: 1.25;
   margin-bottom: 1.5rem;

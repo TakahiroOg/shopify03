@@ -36,7 +36,7 @@
         "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "Bring the Spa Home. Try This Do-It-Yourself Microcurrent Skincare"
+            "heading": "Say Goodbye to the Double Chin, Round Cheeks, Wrinkles & Acne"
           }
         },
         "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1": {
@@ -191,6 +191,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1080
           }

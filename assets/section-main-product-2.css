@@ -243,7 +243,9 @@
     justify-content: center;
   }
   .product slider-component .thumbnail-list button[aria-current] {
-    background-color: #000;
+    background-color: rgb(var(--color-base-accent-2));
+    border-color: rgb(var(--color-base-accent-2));
+    opacity: 1;
   }
 }
 
@@ -347,15 +349,13 @@
 }
 
 .product-subtitle {
-  line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .benefit-list > * {
   padding-left: 30px;
   position: relative;
   margin-bottom: 6px;
-  color: #262626;
 }
 .benefit-list > *::before {
   content: "";
@@ -492,6 +492,10 @@
   .mobile-hide {
     display: none;
   }
+  .product-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
   .product-info .benefit-list {
     margin: 1rem 0 1.5rem;
     font-size: 14px;
@@ -519,7 +523,8 @@
   }
   .thumbnail {
     border-radius: 12px;
-    color: rgb(var(--color-base-text));
+    color: #b3b3b3;
+    background-color: #b3b3b3;
   }
 }
 @media screen and (max-width: 1024px) {

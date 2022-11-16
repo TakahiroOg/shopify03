@@ -25,8 +25,10 @@
       "settings": {
         "hide_variants": true,
         "enable_video_looping": false,
+        "product_featured_img": "shopify:\/\/shop_images\/Snatch_the_face_jawline_at_home.png",
         "review_img": "shopify:\/\/shop_images\/8.jpg",
         "review_text": "It has made my skin so nice and sharpened my jawline. Absolutely love it.",
+        "show_verify": true,
         "review_name": "Emily W."
       }
     },
@@ -36,7 +38,7 @@
         "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0": {
           "type": "heading",
           "settings": {
-            "heading": "Say Goodbye to the Double Chin, Round Cheeks, Wrinkles & Acne"
+            "heading": "Bring The Spa Home - Try This Do-It-Yourself Microcurrent Skincare"
           }
         },
         "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1": {
@@ -54,6 +56,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/16.jpg",
         "height": "adapt",
+        "no_img_padding": false,
         "layout": "text_first",
         "big_header": true,
         "mobile_reverse": false,
@@ -90,6 +93,7 @@
       ],
       "settings": {
         "height": "adapt",
+        "no_img_padding": false,
         "layout": "image_first",
         "big_header": true,
         "mobile_reverse": false,
@@ -116,7 +120,7 @@
           "type": "text",
           "settings": {
             "text": "",
-            "html_text": "<div class=\"benefit-list\">\n<p>92% of users experienced improved facial contouring!<\/p>\n<p>90% of users reported their skin looked and felt smoother which drove up their confidence!<\/p>\n<\/div>"
+            "html_text": "<div class=\"benefit-list\">\n<p class=\"benefit\">92% of users experienced improved facial contouring!<\/p>\n<p class=\"benefit\">90% of users reported their skin looked and felt smoother which drove up their confidence!<\/p>\n<\/div>"
           }
         }
       },
@@ -127,6 +131,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/12.jpg",
         "height": "adapt",
+        "no_img_padding": false,
         "layout": "text_first",
         "big_header": true,
         "mobile_reverse": false,
@@ -164,6 +169,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/1.gif",
         "height": "adapt",
+        "no_img_padding": false,
         "layout": "image_first",
         "big_header": true,
         "mobile_reverse": false,
@@ -177,16 +183,10 @@
         "padding_bottom": 0
       }
     },
-    "cta": {
-      "type": "cta",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
-        "81c0d837-551b-4a1a-a8ab-a575fee04ff3": {
+        "0dba7a95-42a3-42c7-9d7b-7b61bb7f0257": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
@@ -198,7 +198,7 @@
         }
       },
       "block_order": [
-        "81c0d837-551b-4a1a-a8ab-a575fee04ff3"
+        "0dba7a95-42a3-42c7-9d7b-7b61bb7f0257"
       ],
       "settings": {
         "include_margins": false
@@ -221,7 +221,6 @@
     "cfb38d3b-1e73-465f-8d41-345c484faac7",
     "1f7a7f5d-541f-440b-93cb-9f3a073f6fb2",
     "e85d70cd-4619-44db-af59-f770a8d80d71",
-    "cta",
     "loox-product-reviews-app-section",
     "guarantee"
   ]

@@ -368,6 +368,10 @@ body,
   font-weight: var(--font-body-weight);
 }
 
+strong {
+  font-weight: 600;
+}
+
 h1,
 h2,
 h3,
@@ -2965,10 +2969,10 @@ img {
 }
 
 .get-btn {
-  font-weight: 700;
+  font-weight: 600;
   padding: 12px 0;
   font-size: 20px;
   background-color: rgb(var(--color-base-accent-4));
   border: 1px solid rgb(var(--color-base-accent-4));
-  border-radius: 5px;
+  border-radius: var(--buttons-radius);
 }

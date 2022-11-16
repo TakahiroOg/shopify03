@@ -191,15 +191,6 @@ cart-items {
   display: block;
 }
 
-.cart__checkout-button {
-  max-width: 36rem;
-  font-weight: 700;
-  border-radius: 5px;
-  background-color: rgb(var(--color-base-accent-4));
-  border: 1px solid rgb(var(--color-base-accent-4));
-  box-shadow: none;
-}
-
 .cart__ctas {
   text-align: center;
 }

@@ -352,12 +352,12 @@
   margin-bottom: 1.5rem;
 }
 
-.benefit-list > * {
+.benefit-list .benefit {
   padding-left: 30px;
   position: relative;
   margin-bottom: 6px;
 }
-.benefit-list > *::before {
+.benefit-list .benefit::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -377,7 +377,7 @@
   vertical-align: middle;
 }
 .price-item--sale {
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(var(--color-base-accent-1));
 }
 .price-item--regular {
@@ -416,7 +416,7 @@
 }
 
 .cta {
-  margin: 1.5rem 0;
+  margin: 2rem 0 1.5rem;
 }
 .cta-button {
   flex: 0 0 50%;
@@ -433,7 +433,7 @@
   top: calc(50% - 10px);
   width: 20px;
   height: 20px;
-  right: 10px;
+  right: 20px;
   background-image: url(https://cdn.shopify.com/s/files/1/0650/9818/6967/files/arrow-right.svg?v=1665753331);
   background-size: cover;
 }
@@ -468,7 +468,6 @@
 }
 .review-content .review {
   margin-bottom: 10px;
-  font-style: italic;
 }
 .verify {
   display: flex;

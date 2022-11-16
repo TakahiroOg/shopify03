@@ -1,0 +1,196 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-2",
+      "blocks": {
+        "fa2626d3-64bb-4c05-977e-0aa91c303a3b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How To Use",
+            "tab_content": "<p>STEP 1: Prepare your skin through cleansing<\/p><p>STEP 2: Apply water or water based serum <\/p><p>STEP 3:  Turn on the device<\/p><p>STEP 4: Choose your level of intensity<\/p><p>STEP 5: Apply to recommended facial areas<\/p>"
+          }
+        },
+        "f879fb62-8f98-438d-9493-8f5bebae6a87": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's Included",
+            "tab_content": "<p>Micro-Current Facial Roller<\/p><p>Charging cables<\/p><p>Instruction manuals<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fa2626d3-64bb-4c05-977e-0aa91c303a3b",
+        "f879fb62-8f98-438d-9493-8f5bebae6a87"
+      ],
+      "settings": {
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "product_featured_img": "shopify:\/\/shop_images\/1.png",
+        "review_img": "shopify:\/\/shop_images\/1.jpg",
+        "review_text": "I use this Microcurrent Device every night for only 5 mins, and I found that it helps with lymphatic drainage, so my face is a lot less puffy. My face is slimmer, and my cheekbones and jaw are already a lot more defined & contoured.",
+        "show_verify": false,
+        "review_name": "Kaylee N."
+      }
+    },
+    "0d1af0e1-f396-4f94-999d-3b5fd16c6c8b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Redefine Your Face and Jawline With This At-Home Facial Device"
+          }
+        },
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An at-home face lift to instantly give you a toned, more youthful appearance. Our micro-current device utilizes alpha wave technology to lift and tighten your facial muscles while also reducing the look of fine lines and wrinkles. A complete workout for your facial muscles, all from the comfort of your own home. <\/p>",
+            "html_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-0",
+        "template--16610979676375__0d1af0e1-f396-4f94-999d-3b5fd16c6c8b-1665744963b66d41f1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/beforeaftermicrocurrent.jpg",
+        "height": "adapt",
+        "no_img_padding": false,
+        "layout": "text_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": true,
+        "buy_button_text": "BUY IT NOW",
+        "buy_button_desktop": true,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "1f7a7f5d-541f-440b-93cb-9f3a073f6fb2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The No-Sweat Workout For Your Face"
+          }
+        },
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>MicroSculpt works by using SAFE, low-level electrical currents (you won’t even feel it) to gently contract your facial muscles, just like a gym workout!<\/p><p><strong>Training and toning your facial muscles…<\/strong><\/p><p>... while decreasing puffiness and inflammation by draining facial lymph nodes.<\/p>",
+            "html_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-0",
+        "template--16610979676375__1f7a7f5d-541f-440b-93cb-9f3a073f6fb2-1665793128d010e748-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/giphy.gif",
+        "height": "adapt",
+        "no_img_padding": false,
+        "layout": "image_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": false,
+        "buy_button_text": "",
+        "buy_button_desktop": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e85d70cd-4619-44db-af59-f770a8d80d71": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "html_text": "<div class=\"benefit-list\">\n<p class=\"benefit\"><strong>Face Looks More Sculpted<\/strong>\n<br>As facial muscles are strengthened<\/p>\n<p class=\"benefit\"><strong>Skin Looks More Supple & Smooth<\/strong> \n<br>As increased muscle better\nsupports skin structure<\/p>\n<p class=\"benefit\"><strong>Puffiness Is Noticeably Reduced<\/strong> \n<br>As facial lymph nodes are drained<\/p>\n\n<p class=\"benefit\"><strong>Skin “Glows”<\/strong> \n<br>As toxins are removed\n& nutrients are delivered<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16610979676375__e85d70cd-4619-44db-af59-f770a8d80d71-1665793128d010e748-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/microcurrent-facial-img.jpg",
+        "height": "adapt",
+        "no_img_padding": true,
+        "layout": "text_first",
+        "big_header": true,
+        "mobile_reverse": false,
+        "video": "",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "buy_button": false,
+        "buy_button_text": "BUY IT NOW",
+        "buy_button_desktop": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "08ef9b35-30f6-4163-a38a-533afaa283e7": {
+      "type": "rich-text",
+      "blocks": {
+        "54435830-fb4f-43b5-b3be-7027fa53113d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With noticeable facial contouring that improves over time, the more you use it! <\/p><p>(Just like any exercise program, best results are seen with regular use!) <\/p>",
+            "html_text": ""
+          }
+        },
+        "9da09d17-6872-4316-9a24-3082bc4a6357": {
+          "type": "button",
+          "settings": {
+            "button_label": "BUY IT NOW"
+          }
+        }
+      },
+      "block_order": [
+        "54435830-fb4f-43b5-b3be-7027fa53113d",
+        "9da09d17-6872-4316-9a24-3082bc4a6357"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "desktop-center",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "guarantee": {
+      "type": "guarantee",
+      "disabled": true,
+      "settings": {
+        "gt_headline": "GLOW YOUR SKIN GUARANTEE",
+        "gt_description": "<p>Glow your skin or get your money back! We're confident you'll love your Microcurrent massager. If you don't see results, you can easily get your money back.<\/p><p>Everyone is different, but we are so confident that we offer a 60-day risk-free trial.<\/p>",
+        "mobile_center": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0d1af0e1-f396-4f94-999d-3b5fd16c6c8b",
+    "1f7a7f5d-541f-440b-93cb-9f3a073f6fb2",
+    "e85d70cd-4619-44db-af59-f770a8d80d71",
+    "08ef9b35-30f6-4163-a38a-533afaa283e7",
+    "loox-product-reviews-app-section",
+    "guarantee"
+  ]
+}

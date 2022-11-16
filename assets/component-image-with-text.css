@@ -4,12 +4,14 @@
 
 .buy-button-sub {
   width: 100%;
+  margin-top: 3rem;
 }
 
 .get-btn-sub {
   font-weight: 600;
   background: rgb(var(--color-base-accent-4));
-  font-size: 16px;
+  font-size: 20px;
+  height: 50px;
 }
 
 @media screen and (max-width: 749px) {
@@ -18,9 +20,6 @@
   }
   .image-with-text__heading {
     font-size: 2.5rem;
-  }
-  .buy-button-sub {
-    margin-top: 3rem;
   }
 }
 .image-with-text .grid__item {
@@ -104,7 +103,7 @@
 }
 @media screen and (min-width: 750px) {
   .image-with-text__content {
-    padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+    padding: 2rem calc(4rem / var(--font-body-scale));
   }
 }
 
@@ -360,8 +359,8 @@
     rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
-.image-with-text__content > * + * {
-  margin-top: 2rem;
+.image-with-text__content > h2 {
+  margin-bottom: 2rem;
 }
 
 .image-with-text__content > .image-with-text__text:empty ~ a {

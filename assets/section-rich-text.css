@@ -5,7 +5,7 @@
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
-  width: calc(100% - 4rem / var(--font-body-scale));
+  width: calc(100% - 2rem);
 }
 
 .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
@@ -33,6 +33,9 @@
   .rich-text__blocks {
     max-width: 50rem;
   }
+  .desktop-center {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -50,9 +53,9 @@
   margin-bottom: 0;
 }
 
-.rich-text__blocks > * + * {
+/* .rich-text__blocks > * + * {
   margin-top: 2rem;
-}
+} */
 
 .rich-text__blocks > * + a {
   margin-top: 3rem;

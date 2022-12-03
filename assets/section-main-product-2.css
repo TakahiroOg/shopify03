@@ -104,6 +104,12 @@
   display: none;
 }
 
+.second_image.product__media-item.product__media-item--variant {
+  display: block;
+}
+.second_image.thumbnail-list_item--variant:not(:first-child) {
+  display: block;
+}
 .product__media-item--variant:first-child {
   display: block;
 }
@@ -158,6 +164,9 @@
 }
 
 @media screen and (min-width: 750px) {
+  .second_image.product__media-item.product__media-item--variant:not(.is-active) {
+    display: none;
+  }
   .product-media-modal__content {
     padding: 2rem 11rem;
   }

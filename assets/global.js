@@ -920,6 +920,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateBundleIncludes();
+    this.changeCoverImage();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, "", true);
@@ -980,6 +981,19 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.currentVariant.featured_media.id}"]`
     );
     modalContent.prepend(newMediaModal);
+  }
+
+  changeCoverImage() {
+    let coverImages = document.querySelectorAll('.cover_image');
+    if (!coverImages) return;
+    coverImages.forEach((coverImage) =>
+      coverImage.style.display = 'none'
+    );
+    let secondImage = document.querySelectorAll('.second_image');
+    if (!secondImage) return;
+    secondImage.forEach((image) =>
+      image.classList.remove('second_image')
+    );
   }
 
   updateURL() {

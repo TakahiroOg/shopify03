@@ -5,7 +5,7 @@
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
+  {%- assign includes = "" -%}
   <div class="container">
     <div class="product product--thumbnail_slider grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="only-on-mobile">
@@ -182,28 +182,41 @@
               >
                 {%- for option in product.options_with_values -%}
                   <fieldset class="js product-form__input">
-                    <legend class="form__label">{{ option.name }}</legend>
-                    {%- for value in option.values -%}
-                      <input
-                        type="radio"
-                        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                        name="{{ option.name }}"
-                        value="{{ value | escape }}"
-                        form="{{ product_form_id }}"
-                        {% if option.selected_value == value %}
-                          checked
-                        {% endif %}
-                      >
-                      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                        {{ value }}
-                      </label>
-                    {%- endfor -%}
+                    {%- comment -%} <legend class="form__label">{{ option.name }}</legend> {%- endcomment -%}
+                    <div class="row bundle-wrap">
+                      {%- assign index = 0 -%}
+                      {%- for value in option.values -%}
+                        <input
+                          type="radio"
+                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          name="{{ option.name }}"
+                          value="{{ value | escape }}"
+                          form="{{ product_form_id }}"
+                          {% if option.selected_value == value %}
+                            checked
+                          {% endif %}
+                        >
+                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="saving-bundle">
+                          {%- if product.variants[index].metafields.custom.save != null -%}
+                            <div class="bundle-tag">SAVE<span>{{ product.variants[index].metafields.custom.save }}%</span></div>
+                          {%- endif -%}
+                          <div class="bundle-block">
+                            <div class="bundle-title">{{ value }}</div>
+                            <div class="bundle-price">{{ product.variants[index].price | money }}</div>
+                          </div>
+                        </label>
+                        {% assign includes = includes | append: product.variants[index].metafields.custom.includes | append: ',' %}
+                        {% assign index = index | plus: 1 %}
+                      {%- endfor -%}
+                    </div>
                   </fieldset>
                 {%- endfor -%}
                 <script type="application/json">
                   {{ product.variants | json }}
                 </script>
               </variant-radios>
+              {% assign bundle_includes = includes %}
+              <div class="bundle-includes"></div>
             {%- endunless -%}
     
               <div class="cta">
@@ -286,6 +299,8 @@
   {%- endif -%}
 
   <script>
+    let bundleIncludes = '{{bundle_includes}}';
+    let buncleIncludesArray = bundleIncludes.split(',');
     document.addEventListener('DOMContentLoaded', function() {
       function isIE() {
         const ua = window.navigator.userAgent;

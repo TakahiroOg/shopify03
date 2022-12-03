@@ -25,7 +25,7 @@
       "settings": {
         "hide_variants": true,
         "enable_video_looping": false,
-        "product_featured_img": "shopify:\/\/shop_images\/1.png",
+        "product_featured_img": "shopify:\/\/shop_images\/img_9.png",
         "review_img": "shopify:\/\/shop_images\/1.jpg",
         "review_text": "I use this Microcurrent Device every night for only 5 mins, and I found that it helps with lymphatic drainage, so my face is a lot less puffy. My face is slimmer, and my cheekbones and jaw are already a lot more defined & contoured.",
         "show_verify": false,
@@ -101,8 +101,8 @@
         "video": "",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "buy_button": false,
-        "buy_button_text": "",
+        "buy_button": true,
+        "buy_button_text": "Buy It Now",
         "buy_button_desktop": false,
         "padding_top": 0,
         "padding_bottom": 0
@@ -145,8 +145,15 @@
         "54435830-fb4f-43b5-b3be-7027fa53113d": {
           "type": "text",
           "settings": {
-            "text": "<p>With noticeable facial contouring that improves over time, the more you use it! <\/p><p>(Just like any exercise program, best results are seen with regular use!) <\/p>",
+            "text": "<p>With noticeable facial contouring that improves over time, the more you use it! <\/p><p>(Just like any exercise program, best results are seen with regular use!) <\/p><p><\/p>",
             "html_text": ""
+          }
+        },
+        "5857c76d-3a0f-4820-a55d-c5f4dea1aabb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BEFORE.png",
+            "img_width": 520
           }
         },
         "9da09d17-6872-4316-9a24-3082bc4a6357": {
@@ -158,6 +165,7 @@
       },
       "block_order": [
         "54435830-fb4f-43b5-b3be-7027fa53113d",
+        "5857c76d-3a0f-4820-a55d-c5f4dea1aabb",
         "9da09d17-6872-4316-9a24-3082bc4a6357"
       ],
       "settings": {
@@ -170,6 +178,21 @@
     },
     "loox-product-reviews-app-section": {
       "type": "apps",
+      "blocks": {
+        "66c5a477-3d17-40c6-9323-56699a11811a": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 12,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "66c5a477-3d17-40c6-9323-56699a11811a"
+      ],
       "settings": {
         "include_margins": false
       }

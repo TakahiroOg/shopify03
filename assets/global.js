@@ -919,6 +919,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, "", false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
+    this.updateBundleIncludes();
 
     if (!this.currentVariant) {
       this.toggleAddButton(true, "", true);
@@ -949,6 +950,12 @@ class VariantSelects extends HTMLElement {
         })
         .includes(false);
     });
+  }
+
+  updateBundleIncludes() {
+    let bundleIncludes = document.querySelector('.bundle-includes');
+    let index = this.variantData.map(e => e.id).indexOf(this.currentVariant.id);
+    bundleIncludes.innerHTML = buncleIncludesArray[index];
   }
 
   updateMedia() {

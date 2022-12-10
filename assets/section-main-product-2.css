@@ -628,6 +628,11 @@ input[type=radio]:checked+label {
   z-index: 100;
   width: 100%;
 }
+@media screen and (min-width: 750px) {
+  #sticky-atc {
+    display: none !important;
+  }
+}
 .sticky-form-wrapper {
   background-color: #fff;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 9%);
@@ -649,4 +654,5 @@ input[type=radio]:checked+label {
 }
 .sticky-form-select {
   width: calc(100vw - 160px - 2.125rem);
+  display: block;
 }

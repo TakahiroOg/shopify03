@@ -620,3 +620,33 @@ input[type=radio]:checked+label {
     align-items: center;
   }
 }
+#sticky-atc {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+.sticky-form-wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 9%);
+}
+.sticky-form {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 14px 0;
+}
+.sticky-form .get-btn {
+  font-size: 15px;
+}
+.sticky-form .product-form__input {
+  margin: 0;
+}
+.sticky-form .product-form__input .select__select {
+  padding-left: .5rem;
+}
+.sticky-form-select {
+  width: calc(100vw - 160px - 2.125rem);
+}

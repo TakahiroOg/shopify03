@@ -1022,8 +1022,17 @@ class VariantSelects extends HTMLElement {
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');
       input.value = this.currentVariant.id;
+      const select = productForm.querySelector('select');
+      select.value = this.currentVariant.title;
       input.dispatchEvent(new Event("change", { bubbles: true }));
     });
+    const variantRadios = document.querySelector('variant-radios');
+    const variantInputs = variantRadios.querySelectorAll('input[type="radio"]');
+    variantInputs.forEach((input) => {
+      if (input.value == this.currentVariant.title) {
+        input.checked = true;
+      }
+    })
   }
 
   updatePickupAvailability() {

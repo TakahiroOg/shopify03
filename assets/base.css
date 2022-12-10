@@ -220,6 +220,10 @@ html.no-js .no-js-hidden {
   margin: 0 auto;
 }
 
+.show {
+  display: block !important;
+}
+
 @media screen and (min-width: 750px) {
   .page-width {
     padding: 0 5rem;
@@ -1780,7 +1784,7 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   position: absolute;
   top: calc(50% - 0.2rem);
-  right: calc(var(--inputs-border-width) + 1.5rem);
+  right: calc(var(--inputs-border-width) + .5rem);
 }
 
 .select__select,

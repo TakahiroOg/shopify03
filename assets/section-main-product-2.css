@@ -424,6 +424,11 @@ input[type=radio]:checked+label {
   position: relative;
   margin-bottom: 6px;
 }
+.benefit-description .benefit {
+  margin-top: 0;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
 .benefit-list .benefit::before {
   content: "";
   width: 18px;
@@ -605,7 +610,7 @@ input[type=radio]:checked+label {
   }
 }
 @media screen and (min-width: 750px) {
-  .benefit-list {
+  .benefit-list.benefit-highlight {
     margin-bottom: 2.5rem;
     margin-left: 1rem;
   }

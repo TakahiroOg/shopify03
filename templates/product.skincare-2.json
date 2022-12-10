@@ -63,7 +63,7 @@
         "video": "",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "buy_button": true,
+        "buy_button": false,
         "buy_button_text": "BUY IT NOW",
         "buy_button_desktop": true,
         "padding_top": 36,
@@ -101,7 +101,7 @@
         "video": "",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "buy_button": true,
+        "buy_button": false,
         "buy_button_text": "Buy It Now",
         "buy_button_desktop": false,
         "padding_top": 0,
@@ -115,7 +115,7 @@
           "type": "text",
           "settings": {
             "text": "",
-            "html_text": "<div class=\"benefit-list\">\n<p class=\"benefit\"><strong>Face Looks More Sculpted<\/strong>\n<br>As facial muscles are strengthened<\/p>\n<p class=\"benefit\"><strong>Skin Looks More Supple & Smooth<\/strong> \n<br>As increased muscle better\nsupports skin structure<\/p>\n<p class=\"benefit\"><strong>Puffiness Is Noticeably Reduced<\/strong> \n<br>As facial lymph nodes are drained<\/p>\n\n<p class=\"benefit\"><strong>Skin “Glows”<\/strong> \n<br>As toxins are removed\n& nutrients are delivered<\/p>\n<\/div>"
+            "html_text": "<div class=\"benefit-list benefit-description\">\n<p class=\"benefit\"><strong>Face Looks More Sculpted<\/strong>\n<br>As facial muscles are strengthened<\/p>\n<p class=\"benefit\"><strong>Skin Looks More Supple & Smooth<\/strong> \n<br>As increased muscle better\nsupports skin structure<\/p>\n<p class=\"benefit\"><strong>Puffiness Is Noticeably Reduced<\/strong> \n<br>As facial lymph nodes are drained<\/p>\n<p class=\"benefit\"><strong>Skin “Glows”<\/strong> \n<br>As toxins are removed\n& nutrients are delivered<\/p>\n<\/div>"
           }
         }
       },
@@ -135,8 +135,8 @@
         "buy_button": false,
         "buy_button_text": "BUY IT NOW",
         "buy_button_desktop": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "08ef9b35-30f6-4163-a38a-533afaa283e7": {
@@ -145,7 +145,7 @@
         "54435830-fb4f-43b5-b3be-7027fa53113d": {
           "type": "text",
           "settings": {
-            "text": "<p>With noticeable facial contouring that improves over time, the more you use it! <\/p><p>(Just like any exercise program, best results are seen with regular use!) <\/p><p><\/p>",
+            "text": "<p>With noticeable facial contouring that improves over time, the more you use it! <\/p><p>Just like any exercise program, best results are seen with regular use!<\/p><p><\/p>",
             "html_text": ""
           }
         },

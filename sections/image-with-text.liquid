@@ -13,7 +13,7 @@
     }
   }
 {%- endstyle -%}
-{% if section.settings.buy_button %}
+{% if section.settings.buy_button or section.settings.buy_button_desktop %}
   {%- assign product_form_id = 'product-form-' | append: section.id -%}
 {% endif %}
 <div class="image-with-text image-with-text--no-overlap page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %} section-{{ section.id }}-padding">
@@ -39,7 +39,7 @@
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
-        {% if section.settings.buy_button and section.settings.buy_button_desktop %}
+        {% if section.settings.buy_button_desktop %}
           <div class="mobile-hide buy-button-sub">
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}

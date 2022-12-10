@@ -63,7 +63,7 @@
         "video": "",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "buy_button": true,
+        "buy_button": false,
         "buy_button_text": "BUY IT NOW",
         "buy_button_desktop": false,
         "padding_top": 36,
@@ -101,8 +101,8 @@
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "buy_button": false,
-        "buy_button_text": "",
-        "buy_button_desktop": false,
+        "buy_button_text": "Buy It Now",
+        "buy_button_desktop": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -138,9 +138,9 @@
         "video": "",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "buy_button": true,
+        "buy_button": false,
         "buy_button_text": "BUY IT NOW",
-        "buy_button_desktop": true,
+        "buy_button_desktop": false,
         "padding_top": 0,
         "padding_bottom": 0
       }
